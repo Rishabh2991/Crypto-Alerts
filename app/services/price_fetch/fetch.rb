@@ -18,8 +18,7 @@ module PriceFetch
     end
 
     def current_price
-      #resp.first.dig("current_price")
-      30700
+      resp.first.dig("current_price")
     end
 
     def resp 
