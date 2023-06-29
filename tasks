@@ -1,0 +1,6 @@
+- How reactive should this application be? How much duration is allowed between a price variation
+and an email alert.
+
+- Downsides of sidekiq
+
+- Control over alert structure.

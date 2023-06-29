@@ -1,0 +1,15 @@
+<h1>My Alerts List</h1>
+<table>
+  <tr>
+    <th>Alert Target Value </th>              
+    <th>Alert Count </th>                      
+    <th>Created At </th>
+  </tr>
+ <% @user_alerts.each do |alert| %>
+  <tr>
+    <td><%= alert.target_price%></td>         
+    <td><%=alert.trigger_count_history %></td><td>     
+    <td><%=alert.created_at %></td>
+  </tr>
+  <% end %>
+ </table>
