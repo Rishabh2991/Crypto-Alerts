@@ -41,3 +41,12 @@ Things pending.
 1. This implementation depends on an API connection to fetch latest crypto price at short intervals and keep them into a readily accessible key value pair in a Redis cache. I can understand that webhook was the recommended source of pricing data, but In my opinion the rate at which webhooks will push data into this system and the volume of alerts which sidekiq will need to handle along with time will become a bottleneck in scaling.
 2. The current implementation is ideal for a light weight alerting system for a small subset of users and can be scaled with a more structure redis cluster and sidekiq along with user volume.
 3. In my experience sidekiq often tends to miss out on jobs in case of high volume of jobs in queues and in case of an alerting app it could lead to a bad customer experience. I believe a lamda based architecture is more suitable for this use case.
+
+![Screenshot 2023-06-30 at 2 27 46 AM](https://github.com/Rishabh2991/btcAlerts/assets/22934371/ba296e64-6913-479e-9347-2d61347f7566)
+
+![Screenshot 2023-06-30 at 2 28 02 AM](https://github.com/Rishabh2991/btcAlerts/assets/22934371/654ffe80-3ed3-4e28-ae63-c84367b5df33)
+
+<img width="1083" alt="Screenshot 2023-06-30 at 2 34 50 AM" src="https://github.com/Rishabh2991/btcAlerts/assets/22934371/0bcb4a73-e769-4167-8b41-228e65a586f3">
+
+
+   
