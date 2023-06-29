@@ -2,8 +2,7 @@ class PriceFetchJob
   include Sidekiq::Worker
 
   def perform(*args)
-    #sync!
-    puts "running"
+    sync!
   end
 
   private
